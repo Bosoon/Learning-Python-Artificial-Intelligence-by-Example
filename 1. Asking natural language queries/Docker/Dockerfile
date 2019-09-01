@@ -2,6 +2,7 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y wget
 RUN apt-get install -y bzip2
+RUN apt-get install -y build-essential
 
 # Setup locale
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y locales
